@@ -1,0 +1,14 @@
+name: Spread
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  snap-build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
