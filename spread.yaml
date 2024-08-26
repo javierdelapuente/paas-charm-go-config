@@ -1,0 +1,12 @@
+project: paas-charm-go-generator
+
+path: /paas-charm-go-generator
+
+backends:
+    lxd:
+        systems: [ubuntu-24.04]
+
+suites:
+    tests/:
+        summary: Simple examples
+

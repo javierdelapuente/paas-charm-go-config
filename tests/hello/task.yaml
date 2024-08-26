@@ -1,0 +1,4 @@
+summary: Greet the planet
+execute: |
+    echo "Hello world!"
+    exit 1
