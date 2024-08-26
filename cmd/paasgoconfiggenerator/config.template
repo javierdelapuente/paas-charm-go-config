@@ -9,6 +9,7 @@ type CharmConfig struct {
 }
 
 type ConfigOptions struct {
+	BaseURL     string  `env:"APP_BASE_URL"`
      	Port        int     `env:"APP_PORT"`
 	MetricsPort *int    `env:"APP_METRICS_PORT"`
 	MetricsPath *string `env:"APP_METRICS_PATH"`
