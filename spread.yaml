@@ -6,6 +6,10 @@ backends:
     lxd:
         systems: [ubuntu-24.04]
 
+prepare: |
+  snap install go --classic
+  GOBIN=/usr/local/bin go install -buildvcs=false ./cmd/paasgoconfiggenerator
+
 suites:
     tests/:
         summary: Simple examples

@@ -26,6 +26,5 @@ jobs:
 
       - name: Build and run spread
         run: |
-          id
           (cd _spread/cmd/spread && go build)
           _spread/cmd/spread/spread -v
