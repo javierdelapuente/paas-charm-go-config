@@ -8,6 +8,7 @@ import (
 	"reflect"
 
 	"github.com/caarlos0/env/v11"
+	"github.com/kr/pretty"
 )
 
 func hello(w http.ResponseWriter, req *http.Request) {
@@ -27,7 +28,7 @@ func main() {
 	httpProxy := "http://proxy.example.com:3128"
 	expected := config.CharmConfig{
 		ConfigOptions: config.ConfigOptions{
-			Port:        9000,
+			Port:        9001,
 			MetricsPort: &metricsPort,
 			MetricsPath: &metricsPath,
 			SecretKey:   &secretKey,
@@ -38,9 +39,11 @@ func main() {
 			NoProxy:    []string{"127.0.0.1", "localhost", "::1"},
 		},
 	}
-	log.Printf("Actual Config %+v\n", cfg)
+
+	pretty.Logf("Actual Config %# v\n", cfg)
 	if !(reflect.DeepEqual(cfg, expected)) {
-		log.Printf("Expected Config %+v\n", expected)
+		pretty.Logf("Expected Config %# v\n", expected)
+		pretty.Pdiff(log.Default(), cfg, expected)
 		log.Fatalf("Wrong configuration.")
 	}
 
