@@ -28,6 +28,7 @@ func main() {
 	httpProxy := "http://proxy.example.com:3128"
 	expected := config.CharmConfig{
 		ConfigOptions: config.ConfigOptions{
+			BaseURL:     "http://go-app.example.com",
 			Port:        9000,
 			MetricsPort: &metricsPort,
 			MetricsPath: &metricsPath,

@@ -8,7 +8,7 @@ backends:
 
 prepare: |
   snap install go --classic
-  GOBIN=/usr/local/bin go install -buildvcs=false ./cmd/paasgoconfiggenerator
+  GOBIN=/usr/local/bin go install -buildvcs=false ./cmd/paas-charm-go-generator
 
 suites:
     tests/:
