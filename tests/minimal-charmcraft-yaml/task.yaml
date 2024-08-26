@@ -12,7 +12,7 @@ environment:
 
 execute: |
   mkdir -p ./config
-  paas-charm-go-generator --charmcraft-dir ./charm --output-file ./config/config.go --package config
+  paascharmgogenerator --charmcraft-dir ./charm --output-file ./config/config.go --package config
   cat ./config/config.go
   go run .
 

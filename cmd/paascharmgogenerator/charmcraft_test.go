@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	"github.com/google/go-cmp/cmp"
-	generator "github.com/javierdelapuente/paas-charm-go-generator/cmd/paas-charm-go-generator"
+	generator "github.com/javierdelapuente/paas-charm-go-generator/cmd/paascharmgogenerator"
 )
 
 func TestParseCharmcraftYaml(t *testing.T) {
