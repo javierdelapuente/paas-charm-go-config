@@ -1,6 +1,6 @@
-project: paas-charm-go-generator
+project: paascharmgogenerator
 
-path: /paas-charm-go-generator
+path: /paascharmgogenerator
 
 backends:
     lxd:

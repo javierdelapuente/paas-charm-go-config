@@ -11,7 +11,7 @@ import (
 
 	"github.com/caarlos0/env/v11"
 	"github.com/google/go-cmp/cmp"
-	"github.com/javierdelapuente/paas-charm-go-generator/examples"
+	"github.com/javierdelapuente/paascharmgogenerator/examples"
 )
 
 func TestConfigVariableLoading(t *testing.T) {

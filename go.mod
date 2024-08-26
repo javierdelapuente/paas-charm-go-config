@@ -1,4 +1,4 @@
-module github.com/javierdelapuente/paas-charm-go-generator
+module github.com/javierdelapuente/paascharmgogenerator
 
 go 1.23.0
 
